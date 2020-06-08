@@ -78,8 +78,10 @@ To run object detection direct on your screen.
 ```bash
 # Screen
 python Detect_On_Screen.py
+
 ```
 
-Pay attention to your screen resolution and if your resolution doesn't fit intial parameters which are h=1200, W=2200 that are passed in Grabscreen function in Detect_On_Screen.py, you have to adjust the parameters to what fit your screen resolution.
+Pay attention to your screen resolution and if your resolution doesn't fit intial parameters which are h=1200, W=2200 that are passed in Grabscreen function in Detect_On_Screen.py, you have to adjust the parameters to what fit your screen resolution as it's shown below.
+(https://github.com/JabSYsEmb/Objekt_erkennung/blob/master/data/images/ImageGrab.png)
 
 
