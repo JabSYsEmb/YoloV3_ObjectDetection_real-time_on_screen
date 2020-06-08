@@ -53,3 +53,32 @@ python load_weights.py --weights ./weights/yolov3-tiny.weights --output ./weight
 ```
 
 After executing one of the above lines, you should see .tf files in your weights folder.
+
+### Usage examples
+Let's run the project.
+```bash
+# yolov3
+python detect.py --images "data/images/{Name_Input}.jpg" --output "data/images/{Name_output}.jpg"
+
+
+# webcam
+python detect_video.py --video 0
+
+# video file
+python detect_video.py --video data/video/{video_input}.{format} 
+
+# video file with output saved (can save webcam like this too)
+python detect_video.py --video "data/video/{video_input}.{format}"  --output "./detections/{output.avi}"
+```
+Then you can find the detections in the `detections` folder.
+
+### Usage examples for object detection direct on a screen.
+To run object detection direct on your screen.
+
+```bash
+# Screen
+python Detect_On_Screen.py
+
+Pay attention to your screen resolution and if your resolution doesn't fit intial parameter which are h=1200, W=2200 that are passed in Grabscreen function you have to adjust the parameters to what fit your screen resolution.
+```
+
